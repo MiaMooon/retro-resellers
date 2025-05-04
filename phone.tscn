@@ -1,0 +1,127 @@
+[gd_scene load_steps=10 format=3 uid="uid://bdxahur6j6u4k"]
+
+[ext_resource type="Script" uid="uid://r68c8gjy6iq4" path="res://phone.gd" id="1_3rj5o"]
+[ext_resource type="Texture2D" uid="uid://ci8a4eekn403f" path="res://Textures/Phone.png" id="1_lnqov"]
+[ext_resource type="Texture2D" uid="uid://hxfprw70n0qg" path="res://Textures/ShopApp.png" id="3_hfnv5"]
+[ext_resource type="Texture2D" uid="uid://b2mo1vk5l0oke" path="res://Textures/BuildApp.png" id="4_17gxr"]
+[ext_resource type="Texture2D" uid="uid://b8gosworexqye" path="res://Textures/MapApp.png" id="4_tpglx"]
+[ext_resource type="Texture2D" uid="uid://q83qqeeufb1b" path="res://Textures/AdsApp.png" id="6_vuhsr"]
+[ext_resource type="Texture2D" uid="uid://cbxmoxbr3wr71" path="res://Textures/CustomizeShop.png" id="7_th6ti"]
+[ext_resource type="Texture2D" uid="uid://c1gr2f7dns1v" path="res://Textures/WorkApp.png" id="8_vsimv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_idgle"]
+font_size = 24
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Phone" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3rj5o")
+
+[node name="Phone" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_lnqov")
+
+[node name="Build" type="TextureButton" parent="Phone"]
+offset_left = -288.571
+offset_top = -495.714
+offset_right = 223.429
+offset_bottom = 16.2857
+scale = Vector2(0.3, 0.299061)
+texture_normal = ExtResource("4_17gxr")
+
+[node name="Map" type="TextureButton" parent="Phone"]
+offset_left = -77.1428
+offset_top = -495.714
+offset_right = 434.857
+offset_bottom = 16.2857
+scale = Vector2(0.3, 0.299061)
+texture_normal = ExtResource("4_tpglx")
+
+[node name="Shop" type="TextureButton" parent="Phone"]
+offset_left = 144.286
+offset_top = -495.714
+offset_right = 656.286
+offset_bottom = 16.2857
+scale = Vector2(0.3, 0.299061)
+texture_normal = ExtResource("3_hfnv5")
+
+[node name="Label" type="Label" parent="Phone"]
+offset_left = -244.286
+offset_top = -342.857
+offset_right = -185.286
+offset_bottom = -308.857
+text = "Build"
+label_settings = SubResource("LabelSettings_idgle")
+
+[node name="Build2" type="TextureButton" parent="Phone"]
+offset_left = -288.571
+offset_top = -275.714
+offset_right = 223.429
+offset_bottom = 236.285
+scale = Vector2(0.3, 0.299061)
+texture_normal = ExtResource("6_vuhsr")
+
+[node name="Label4" type="Label" parent="Phone"]
+offset_left = -265.714
+offset_top = -122.857
+offset_right = -170.714
+offset_bottom = -88.8571
+text = "Run Ads"
+label_settings = SubResource("LabelSettings_idgle")
+
+[node name="Build3" type="TextureButton" parent="Phone"]
+offset_left = -77.1429
+offset_top = -275.714
+offset_right = 434.857
+offset_bottom = 236.285
+scale = Vector2(0.3, 0.299061)
+texture_normal = ExtResource("7_th6ti")
+
+[node name="Label5" type="Label" parent="Phone"]
+offset_left = -95.7143
+offset_top = -122.857
+offset_right = 93.2857
+offset_bottom = -88.8571
+text = "Customize Store"
+label_settings = SubResource("LabelSettings_idgle")
+
+[node name="Build4" type="TextureButton" parent="Phone"]
+offset_left = 144.286
+offset_top = -275.714
+offset_right = 656.286
+offset_bottom = 236.285
+scale = Vector2(0.3, 0.299061)
+texture_normal = ExtResource("8_vsimv")
+
+[node name="Label6" type="Label" parent="Phone"]
+offset_left = 151.429
+offset_top = -122.857
+offset_right = 285.429
+offset_bottom = -88.8571
+text = "Hire People"
+label_settings = SubResource("LabelSettings_idgle")
+
+[node name="Label2" type="Label" parent="Phone"]
+offset_left = -61.4286
+offset_top = -342.857
+offset_right = 62.5714
+offset_bottom = -308.857
+text = "Shop Local"
+label_settings = SubResource("LabelSettings_idgle")
+
+[node name="Label3" type="Label" parent="Phone"]
+offset_left = 151.429
+offset_top = -342.857
+offset_right = 292.429
+offset_bottom = -308.857
+text = "Shop Online"
+label_settings = SubResource("LabelSettings_idgle")
+
+[connection signal="pressed" from="Phone/Build" to="." method="_on_build_pressed"]

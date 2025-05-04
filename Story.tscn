@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://72ot08dldnuq"]
+
+[ext_resource type="Script" uid="uid://dxhi2d6d7qlwt" path="res://story.gd" id="1_k83q4"]
+[ext_resource type="Texture2D" uid="uid://fhql4jueim17" path="res://Textures/Letter.png" id="2_k83q4"]
+
+[node name="Story" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k83q4")
+
+[node name="Letter" type="Sprite2D" parent="."]
+position = Vector2(960, 463)
+scale = Vector2(0.440298, 0.440298)
+texture = ExtResource("2_k83q4")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 820.0
+offset_top = 948.97
+offset_right = 1100.0
+offset_bottom = 997.97
+pivot_offset = Vector2(140, 24)
+text = "Start Game"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 796.0
+offset_top = 861.025
+offset_right = 1125.0
+offset_bottom = 922.025
+pivot_offset = Vector2(160, 30)
+placeholder_text = "Enter Your Game Stores Name"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

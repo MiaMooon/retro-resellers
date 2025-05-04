@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkc8blov85u7o"]
+
+[ext_resource type="Script" uid="uid://bhaxardmofcpx" path="res://overlay_gui.gd" id="1_vfo2y"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_o2p0e"]
+font_size = 50
+font_color = Color(0, 0.737255, 0.317647, 1)
+outline_size = 9
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_vfo2y"]
+font_size = 50
+outline_size = 9
+outline_color = Color(0, 0, 0, 1)
+
+[node name="OverlayGUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1920.0
+offset_bottom = -1080.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vfo2y")
+
+[node name="MoneyCount" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1671.0
+offset_right = 1896.0
+offset_bottom = 69.0
+text = "$420,690"
+label_settings = SubResource("LabelSettings_o2p0e")
+
+[node name="Time" type="Label" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_right = 375.0
+offset_bottom = 69.0
+text = "Day 1, 8:00 AM"
+label_settings = SubResource("LabelSettings_vfo2y")
