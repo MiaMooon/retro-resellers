@@ -14,11 +14,12 @@ const HEAD_CROUCH_Y = 1.0
 const CROUCH_TRANSITION_SPEED = 6.0
 
 #fov variables
-const BASE_FOV = 75.0
+const BASE_FOV = 90.0
 const FOV_CHANGE = 1.5
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
+
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:

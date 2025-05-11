@@ -21,6 +21,7 @@ func pauseMenu():
 		paused = false
 	else:
 		pause_menu.show()
+		phoneobj.hide()
 		Engine.time_scale = 0
 		Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
 		paused = true
@@ -29,11 +30,11 @@ func PhoneMenu():
 	if phone:
 		phoneobj.hide()
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-		phone = !phone
+		phone = 0
 	else:
 		phoneobj.show()
 		Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
-		phone = !phone
+		phone = 1
 		
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -41,3 +42,7 @@ func _process(delta: float) -> void:
 		pauseMenu()
 	if Input.is_action_just_pressed("OpenPhone"):
 		PhoneMenu()
+		
+	if $CharacterBody3D/Head/Camera3D/BuildMenu.visible and Input.is_action_just_pressed("OpenPhone"):
+		$CharacterBody3D/Head/Camera3D/BuildMenu.hide()
+		

@@ -396,8 +396,12 @@ shadow_enabled = true
 
 [node name="BuildingSystem" type="Node3D" parent="." node_paths=PackedStringArray("camera", "player_body")]
 script = ExtResource("18_o0ujj")
+grid_size = null
+use_grid_snap = null
 camera = NodePath("../CharacterBody3D/Head/Camera3D")
 player_body = NodePath("../CharacterBody3D")
+ground_detection_ray_length = null
+surface_offset = null
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, -0.284814, -11.146)

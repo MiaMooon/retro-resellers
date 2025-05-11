@@ -394,10 +394,8 @@ environment = SubResource("Environment_tlwt5")
 transform = Transform3D(-0.866024, -0.433016, 0.250001, -0.20242, 0.760821, 0.616586, -0.457197, 0.483372, -0.74654, 0, 9.25127, 0)
 shadow_enabled = true
 
-[node name="BuildingSystem" type="Node3D" parent="." node_paths=PackedStringArray("camera", "player_body")]
+[node name="BuildingSystem" type="Node3D" parent="."]
 script = ExtResource("18_o0ujj")
-camera = NodePath("../CharacterBody3D/Head/Camera3D")
-player_body = NodePath("../CharacterBody3D")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, -0.284814, -11.146)

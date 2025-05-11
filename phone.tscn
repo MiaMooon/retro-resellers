@@ -29,26 +29,42 @@ scale = Vector2(0.7, 0.7)
 texture = ExtResource("1_lnqov")
 
 [node name="Build" type="TextureButton" parent="Phone"]
-offset_left = -288.571
-offset_top = -495.714
-offset_right = 223.429
-offset_bottom = 16.2857
+anchors_preset = -1
+anchor_left = 0.0992069
+anchor_top = 0.112723
+anchor_right = 0.31254
+anchor_bottom = 0.232348
+offset_left = -360.0
+offset_top = -640.0
+offset_right = -1.60001
+offset_bottom = -257.194
 scale = Vector2(0.3, 0.299061)
 texture_normal = ExtResource("4_17gxr")
+ignore_texture_size = true
 
 [node name="Map" type="TextureButton" parent="Phone"]
-offset_left = -77.1428
-offset_top = -495.714
-offset_right = 434.857
-offset_bottom = 16.2857
+anchors_preset = -1
+anchor_left = 0.392857
+anchor_top = 0.112723
+anchor_right = 0.606191
+anchor_bottom = 0.232348
+offset_left = -360.0
+offset_top = -640.0
+offset_right = -1.59995
+offset_bottom = -257.194
 scale = Vector2(0.3, 0.299061)
 texture_normal = ExtResource("4_tpglx")
 
 [node name="Shop" type="TextureButton" parent="Phone"]
-offset_left = 144.286
-offset_top = -495.714
-offset_right = 656.286
-offset_bottom = 16.2857
+anchors_preset = -1
+anchor_left = 0.700397
+anchor_top = 0.112723
+anchor_right = 0.913731
+anchor_bottom = 0.232348
+offset_left = -360.0
+offset_top = -640.0
+offset_right = -1.59998
+offset_bottom = -257.194
 scale = Vector2(0.3, 0.299061)
 texture_normal = ExtResource("3_hfnv5")
 
@@ -61,10 +77,15 @@ text = "Build"
 label_settings = SubResource("LabelSettings_idgle")
 
 [node name="Build2" type="TextureButton" parent="Phone"]
-offset_left = -288.571
-offset_top = -275.714
-offset_right = 223.429
-offset_bottom = 236.285
+anchors_preset = -1
+anchor_left = 0.0992063
+anchor_top = 0.284598
+anchor_right = 0.31254
+anchor_bottom = 0.404223
+offset_left = -360.0
+offset_top = -640.0
+offset_right = -1.60001
+offset_bottom = -257.194
 scale = Vector2(0.3, 0.299061)
 texture_normal = ExtResource("6_vuhsr")
 
@@ -77,10 +98,15 @@ text = "Run Ads"
 label_settings = SubResource("LabelSettings_idgle")
 
 [node name="Build3" type="TextureButton" parent="Phone"]
-offset_left = -77.1429
-offset_top = -275.714
-offset_right = 434.857
-offset_bottom = 236.285
+anchors_preset = -1
+anchor_left = 0.392857
+anchor_top = 0.284598
+anchor_right = 0.606191
+anchor_bottom = 0.404223
+offset_left = -360.0
+offset_top = -640.0
+offset_right = -1.60004
+offset_bottom = -257.194
 scale = Vector2(0.3, 0.299061)
 texture_normal = ExtResource("7_th6ti")
 
@@ -93,10 +119,15 @@ text = "Customize Store"
 label_settings = SubResource("LabelSettings_idgle")
 
 [node name="Build4" type="TextureButton" parent="Phone"]
-offset_left = 144.286
-offset_top = -275.714
-offset_right = 656.286
-offset_bottom = 236.285
+anchors_preset = -1
+anchor_left = 0.700397
+anchor_top = 0.284598
+anchor_right = 0.91373
+anchor_bottom = 0.404223
+offset_left = -360.0
+offset_top = -640.0
+offset_right = -1.60004
+offset_bottom = -257.194
 scale = Vector2(0.3, 0.299061)
 texture_normal = ExtResource("8_vsimv")
 
